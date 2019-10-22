@@ -6,6 +6,7 @@ History Revision for {{$dist->name}}:
 
   [Documentation]
   - Fixed POD errors.
+  - README in Markdown.
 
   [Other Changes]
   - Updated distribution to use Dist::Zilla and Pod::Weaver.
