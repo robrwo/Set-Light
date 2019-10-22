@@ -4,7 +4,7 @@ Set::Light - (memory efficient) unordered set of strings
 
 # VERSION
 
-version 0.90
+version 0.91
 
 # SYNOPSIS
 
