@@ -8,7 +8,7 @@ use strict;
 
 use Array::RefElem ();
 
-our $VERSION = '0.90';
+our $VERSION = '0.91';
 
 # shared undef variable
 my $UNDEF = undef;
