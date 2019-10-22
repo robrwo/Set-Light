@@ -2,9 +2,11 @@ package Set::Light;
 
 # ABSTRACT: (memory efficient) unordered set of strings
 
-use Array::RefElem qw/hv_store/;
-use strict;
 require 5.006;
+
+use strict;
+
+use Array::RefElem ();
 
 our $VERSION = '0.90';
 
@@ -45,7 +47,7 @@ sub insert
   my $inserted = 0;
   for (@_)
     {
-    $inserted++, hv_store(%$x, $_, $UNDEF) if ! exists $x->{$_};
+    $inserted++, Array::RefElem::hv_store(%$x, $_, $UNDEF) if ! exists $x->{$_};
     }
   $inserted;
   }
