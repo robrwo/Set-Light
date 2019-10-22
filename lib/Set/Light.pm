@@ -1,4 +1,7 @@
 package Set::Light;
+
+# ABSTRACT: (memory efficient) unordered set of strings
+
 use Array::RefElem qw/hv_store/;
 use strict;
 require 5.006;
@@ -20,13 +23,13 @@ BEGIN
 #############################################################################
 # creation
 
-sub new 
+sub new
   {
   my $class = shift; my $x = bless { }, $class;
 
   my $opt;
   $opt = shift if ref($_[0]) eq 'HASH';
- 
+
   $x->insert(@_) if @_ != 0;
 
   $x;
@@ -38,7 +41,7 @@ sub new
 sub insert
   {
   my ($x) = shift;
- 
+
   my $inserted = 0;
   for (@_)
     {
@@ -94,10 +97,6 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Set::Light - (memory efficient) unordered set of strings
-
 =head1 SYNOPSIS
 
 	use Set::Light;
@@ -139,9 +138,7 @@ it wastes quite a lot of memory, since each key in %SEEN needs one scalar.
 
 These waste even more memory and/or are slower than an ordinary hash.
 
-=head1 METHODS
-
-=head2 new()
+=method new()
 
 	my $set = Set::Light->new();
 
@@ -156,23 +153,23 @@ Note that:
 
 will create a set with the members C<for>, C<bar> and C<baz>.
 
-=head2 size()
+=method size()
 
 	my $elems = $set->size();
 
 Returns the number of elements in the set.
 
-=head2 is_empty()
+=method is_empty()
 
 	if (!$set->is_empty()) { ... }
 
 Returns true if the set is empty (has zero elements).
 
-=head2 is_null()
+=method is_null()
 
 C<is_null()> is an alias to L<is_empty()>.
 
-=head2 has()/contains()/exists/()
+=method has()/contains()/exists/()
 
 	if ($set->has($member)) { ... }
 
@@ -180,7 +177,7 @@ Returns true if the set contains the string C<$member>.
 
 C<contains()> and C<exists()> are aliases to L<has()>.
 
-=head2 insert()
+=method insert()
 
 	$set->insert( $string );
 	$set->insert( @strings );
@@ -195,7 +192,7 @@ get inserted twice. So:
 	print $set->insert('foo');		# 0
 	print $set->insert('bar','baz','foo');	# 2	(foo already inserted)
 
-=head2 delete()/remove()
+=method delete()/remove()
 
 	$set->delete( $string );
 	$set->delete( @strings );
@@ -211,15 +208,6 @@ So:
 	print $set->delete('bar','foo');	# 1 	(only once deleted)
 
 C<remove()> is an alias for C<delete()>.
-
-=head1 LICENSE
-
-This program is free software; you may redistribute it and/or modify it
-under the same terms as Perl itself.
-
-=head1 AUTHOR
-
-(c) Tels bloodgate.com 2004 - 2008.
 
 =head1 SEE ALSO
 
