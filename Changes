@@ -10,6 +10,7 @@ History Revision for {{$dist->name}}:
 
   [Other Changes]
   - Updated distribution to use Dist::Zilla and Pod::Weaver.
+  - Removed tabs from source.
 
 2008-04-06 v0.04 Tels 77 tests
   * no code changes

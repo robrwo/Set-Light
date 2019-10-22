@@ -5,8 +5,8 @@ use strict;
 
 BEGIN
   {
-  chdir 't' if -d 't';		# for manual runs
-  unshift @INC, '../lib';	# for manual runs
+  chdir 't' if -d 't';          # for manual runs
+  unshift @INC, '../lib';       # for manual runs
   plan tests => 46;
   use_ok ('Set::Light');
   }
@@ -103,5 +103,3 @@ is ($set->insert( 'a', 'a', 'a', 'a', 'a' ), 1, 'inserted once');
 
 is ($set->size(), 4, '4 elements');
 ok (!$set->is_null(),  'set is not empty');
-
-

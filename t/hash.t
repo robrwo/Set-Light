@@ -7,8 +7,8 @@ use strict;
 
 BEGIN
   {
-  chdir 't' if -d 't';		# for manual runs
-  unshift @INC, '../lib';	# for manual runs
+  chdir 't' if -d 't';          # for manual runs
+  unshift @INC, '../lib';       # for manual runs
   plan tests => 29;
   use_ok ('Set::Light');
   }
@@ -60,5 +60,3 @@ ok (exists $set->{foo}, 'foo still there');
 is ($set->size(), 28, '28 elements');
 ok (!$set->is_null(),  'set is not empty');
 ok (!$set->is_empty(), 'set is not empty');
-
-
