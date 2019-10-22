@@ -5,6 +5,7 @@ package Set::Light;
 require 5.006;
 
 use strict;
+use warnings;
 
 use Array::RefElem ();
 
