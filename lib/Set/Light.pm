@@ -43,7 +43,7 @@ sub new
 
 sub insert
   {
-  my ($x) = shift;
+  my $x = shift;
 
   my $inserted = 0;
   for (@_)
@@ -85,7 +85,7 @@ sub exists
 
 sub delete
   {
-  my ($x) = shift;
+  my $x = shift;
 
   my $deleted = 0;
   for (@_)

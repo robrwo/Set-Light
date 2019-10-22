@@ -4,6 +4,9 @@ History Revision for {{$dist->name}}:
   [Enhancements]
   - Enable warnings.
 
+  [Bug Fixes]
+  - Fixed incorrect argument handling in insert and delete methods.
+
   [Documentation]
   - Reformatted Changes to conform to modern specs.
   - Fixed typo in TODO.
