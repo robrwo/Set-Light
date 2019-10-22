@@ -1,6 +1,8 @@
 History Revision for {{$dist->name}}:
 
 {{$NEXT}}
+  [Documentation]
+  - Reformatted Changes to conform to modern specs.
 
 0.90      2019-10-22 22:51:16+01:00 Europe/London
   [Improvements]
@@ -15,16 +17,16 @@ History Revision for {{$dist->name}}:
   - Removed tabs from source.
   - Change licence from "perl" to "Perl 5".
 
-2008-04-06 v0.04 Tels 77 tests
+0.04      2008-04-06
   * no code changes
   * modernize package and use Module::Install
   * add POD tests
 
-2004-11-26 v0.03 Tels 75 tests
+0.03      2004-11-26
   * renamed to Set::Light because there already is a Set::String on CPAN
   * added TODO list
 
-2004-11-26 v0.02 Tels 75 tests
+0.02      2004-11-26
   * first version with new/insert/delete/exists/size/is_empty
   * added tests, doc
   * uses a hash, and hv_store() to share the hash elements
