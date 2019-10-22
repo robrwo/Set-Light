@@ -3,6 +3,10 @@ History Revision for {{$dist->name}}:
 {{$NEXT}}
   [Documentation]
   - Reformatted Changes to conform to modern specs.
+  - Fixed typo in TODO.
+
+  [Other Changes]
+  - Set write permissions on TODO.
 
 0.90      2019-10-22 22:51:16+01:00 Europe/London
   [Improvements]
