@@ -156,7 +156,8 @@ and may be cloned from [git://github.com/robrwo/Set-Light.git](git://github.com/
 # BUGS
 
 Please report any bugs or feature requests on the bugtracker website
-[https://github.com/robrwo/Set-Light/issues](https://github.com/robrwo/Set-Light/issues)
+[https://rt.cpan.org/Public/Dist/Display.html?Name=Set-Light](https://rt.cpan.org/Public/Dist/Display.html?Name=Set-Light) or by email
+to [bug-Set-Light@rt.cpan.org](mailto:bug-Set-Light@rt.cpan.org).
 
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired
