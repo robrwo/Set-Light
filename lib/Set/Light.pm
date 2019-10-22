@@ -169,7 +169,7 @@ Returns true if the set is empty (has zero elements).
 
 =method is_null()
 
-C<is_null()> is an alias to L<is_empty()>.
+C<is_null()> is an alias to C<is_empty()>.
 
 =method has()/contains()/exists/()
 
@@ -177,7 +177,7 @@ C<is_null()> is an alias to L<is_empty()>.
 
 Returns true if the set contains the string C<$member>.
 
-C<contains()> and C<exists()> are aliases to L<has()>.
+C<contains()> and C<exists()> are aliases to C<has()>.
 
 =method insert()
 

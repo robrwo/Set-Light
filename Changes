@@ -4,6 +4,9 @@ History Revision for {{$dist->name}}:
   [Improvements]
   - Remove imported functions.
 
+  [Documentation]
+  - Fixed POD errors.
+
   [Other Changes]
   - Updated distribution to use Dist::Zilla and Pod::Weaver.
 

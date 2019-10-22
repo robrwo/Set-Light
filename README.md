@@ -92,7 +92,7 @@ Returns true if the set is empty (has zero elements).
 
 ## is\_null()
 
-`is_null()` is an alias to [is\_empty()](https://metacpan.org/pod/is_empty\(\)).
+`is_null()` is an alias to `is_empty()`.
 
 ## has()/contains()/exists/()
 
@@ -102,7 +102,7 @@ Returns true if the set is empty (has zero elements).
 
 Returns true if the set contains the string `$member`.
 
-`contains()` and `exists()` are aliases to [has()](https://metacpan.org/pod/has\(\)).
+`contains()` and `exists()` are aliases to `has()`.
 
 ## insert()
 

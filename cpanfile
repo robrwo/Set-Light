@@ -1,11 +1,11 @@
 requires "Array::RefElem" => "0";
-requires "perl" => "v5.10.1";
-requires "warnings" => "0";
+requires "perl" => "5.006";
 
 on 'test' => sub {
   requires "File::Spec" => "0";
   requires "Module::Metadata" => "0";
   requires "Test::More" => "0.62";
+  requires "warnings" => "0";
 };
 
 on 'test' => sub {
