@@ -3,7 +3,7 @@ use Array::RefElem qw/hv_store/;
 use strict;
 require 5.006;
 
-our $VERSION = '0.04';
+our $VERSION = '0.90';
 
 # shared undef variable
 my $UNDEF = undef;
