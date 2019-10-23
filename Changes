@@ -17,6 +17,7 @@ History Revision for {{$dist->name}}:
 
   [Other Changes]
   - Set write permissions on TODO.
+  - Add code comments regarding modern Perls.
 
 0.90      2019-10-22 22:51:16+01:00 Europe/London
   [Improvements]

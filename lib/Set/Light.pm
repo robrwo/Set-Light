@@ -45,6 +45,9 @@ sub insert
   {
   my $x = shift;
 
+  # Note: this trick may no longer be necessesary for modern perls,
+  # when storing an undef value.
+
   my $inserted = 0;
   for (@_)
     {
