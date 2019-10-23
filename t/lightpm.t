@@ -1,7 +1,6 @@
 #!/usr/bin/perl -w
 
-use Test::More;
-use strict;
+use Test::Most;
 
 BEGIN
   {

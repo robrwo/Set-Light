@@ -2,8 +2,7 @@
 
 # test the hash interface of Set::Light
 
-use Test::More;
-use strict;
+use Test::Most;
 
 BEGIN
   {
