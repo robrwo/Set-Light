@@ -144,6 +144,14 @@ So:
 
 `remove()` is an alias for `delete()`.
 
+## members
+
+```perl
+my @members = $set->members;
+```
+
+This returns an array of set members in an unsorted array.
+
 # SEE ALSO
 
 [Set::Object](https://metacpan.org/pod/Set::Object), [Set::Scalar](https://metacpan.org/pod/Set::Scalar).
