@@ -3,6 +3,7 @@ History Revision for {{$dist->name}}:
 {{$NEXT}}
   [Enhancements]
   - Enable warnings.
+  - Add members method for returning all set members.
 
   [Bug Fixes]
   - Fixed incorrect argument handling in insert and delete methods.

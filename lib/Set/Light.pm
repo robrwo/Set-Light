@@ -95,6 +95,11 @@ sub delete
   $deleted;
   }
 
+sub members {
+    my ($x) = @_;
+    return keys %$x;
+}
+
 1;
 __END__
 
@@ -211,6 +216,12 @@ So:
 	print $set->delete('bar','foo');	# 1 	(only once deleted)
 
 C<remove()> is an alias for C<delete()>.
+
+=method members
+
+  my @members = $set->members;
+
+This returns an array of set members in an unsorted array.
 
 =head1 SEE ALSO
 
