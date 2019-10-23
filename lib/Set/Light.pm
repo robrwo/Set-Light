@@ -9,7 +9,7 @@ use warnings;
 
 use Array::RefElem ();
 
-our $VERSION = '0.91';
+our $VERSION = '0.92';
 
 # shared undef variable
 my $UNDEF = undef;
