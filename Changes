@@ -1,6 +1,8 @@
 History Revision for {{$dist->name}}:
 
 {{$NEXT}}
+  [Other Changes]
+  - Add missing MANIFEST.SKIP to distribution.
 
 0.91      2019-10-23 16:58:33+01:00 Europe/London
   [Enhancements]
