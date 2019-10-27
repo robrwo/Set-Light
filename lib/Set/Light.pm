@@ -59,14 +59,13 @@ These use even more memory and/or are slower than an ordinary hash.
 # shared undef variable
 my $UNDEF = undef;
 
-BEGIN
-  {
-  # handy aliases
-  *has = \&exists;
-  *contains = \&exists;
-  *is_null = \&is_empty;
-  *remove = \&delete;
-  }
+BEGIN {
+    # handy aliases
+    *has      = \&exists;
+    *contains = \&exists;
+    *is_null  = \&is_empty;
+    *remove   = \&delete;
+}
 
 =method new
 
@@ -85,18 +84,17 @@ will create a set with the members "for", "bar" and "baz".
 
 =cut
 
-sub new
-  {
-  my $class = shift; my $x = bless { }, $class;
+sub new {
+    my $class = shift;
+    my $x     = bless {}, $class;
 
-  my $opt;
-  $opt = shift if ref($_[0]) eq 'HASH';
+    my $opt;
+    $opt = shift if ref( $_[0] ) eq 'HASH';
 
-  $x->insert(@_) if @_ != 0;
+    $x->insert(@_) if @_ != 0;
 
-  $x;
-  }
-
+    $x;
+}
 
 =method insert
 
@@ -116,21 +114,19 @@ get inserted twice. So:
 
 =cut
 
-sub insert
-  {
-  my $x = shift;
+sub insert {
+    my $x = shift;
 
-  # Note: this trick may no longer be necessesary for modern perls,
-  # when storing an undef value.
+    # Note: this trick may no longer be necessesary for modern perls,
+    # when storing an undef value.
 
-  my $inserted = 0;
-  for (@_)
-    {
-    $inserted++, Array::RefElem::hv_store(%$x, $_, $UNDEF) unless CORE::exists $x->{$_};
+    my $inserted = 0;
+    for (@_) {
+        $inserted++, Array::RefElem::hv_store( %$x, $_, $UNDEF )
+          unless CORE::exists $x->{$_};
     }
-  $inserted;
-  }
-
+    $inserted;
+}
 
 =method is_empty
 
@@ -144,12 +140,11 @@ This is an alias to L</is_empty>.
 
 =cut
 
-sub is_empty
-  {
-  my ($x) = @_;
+sub is_empty {
+    my ($x) = @_;
 
-  scalar keys %$x == 0;
-  }
+    scalar keys %$x == 0;
+}
 
 =method size
 
@@ -159,13 +154,11 @@ Returns the number of elements in the set.
 
 =cut
 
-sub size
-  {
-  my ($x) = @_;
+sub size {
+    my ($x) = @_;
 
-  scalar keys %$x;
-  }
-
+    scalar keys %$x;
+}
 
 =method has
 
@@ -183,12 +176,11 @@ This is an alias for L</has>.
 
 =cut
 
-sub exists
-  {
-  my ($x,$key) = @_;
+sub exists {
+    my ( $x, $key ) = @_;
 
-  CORE::exists $x->{$key};
-  }
+    CORE::exists $x->{$key};
+}
 
 =method delete
 
@@ -212,18 +204,15 @@ This is an alias for L</delete>.
 
 =cut
 
+sub delete {
+    my $x = shift;
 
-sub delete
-  {
-  my $x = shift;
-
-  my $deleted = 0;
-  for (@_)
-    {
-    $deleted++, delete $x->{$_} if CORE::exists $x->{$_};
-    };
-  $deleted;
-  }
+    my $deleted = 0;
+    for (@_) {
+        $deleted++, delete $x->{$_} if CORE::exists $x->{$_};
+    }
+    $deleted;
+}
 
 =method members
 
