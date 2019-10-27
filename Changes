@@ -8,6 +8,8 @@ History Revision for {{$dist->name}}:
 
   - Removed tabs and reformatted sections.
 
+  - Fixed typo in Pod::Weaver config: METHODS was called TYPES.
+
 0.92      2019-10-25 14:12:27+01:00 Europe/London
   [Other Changes]
   - Add missing MANIFEST.SKIP to distribution.

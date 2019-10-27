@@ -53,7 +53,7 @@ it uses quite a lot of memory, since each key in `%SEEN` needs one scalar.
 
 These use even more memory and/or are slower than an ordinary hash.
 
-# TYPES
+# METHODS
 
 ## new
 
