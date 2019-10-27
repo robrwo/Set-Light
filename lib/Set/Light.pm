@@ -126,7 +126,7 @@ sub insert
   my $inserted = 0;
   for (@_)
     {
-    $inserted++, Array::RefElem::hv_store(%$x, $_, $UNDEF) if ! exists $x->{$_};
+    $inserted++, Array::RefElem::hv_store(%$x, $_, $UNDEF) unless CORE::exists $x->{$_};
     }
   $inserted;
   }
@@ -187,7 +187,7 @@ sub exists
   {
   my ($x,$key) = @_;
 
-  exists $x->{$key};
+  CORE::exists $x->{$key};
   }
 
 =method delete
@@ -220,7 +220,7 @@ sub delete
   my $deleted = 0;
   for (@_)
     {
-    $deleted++, delete $x->{$_} if exists $x->{$_};
+    $deleted++, delete $x->{$_} if CORE::exists $x->{$_};
     };
   $deleted;
   }

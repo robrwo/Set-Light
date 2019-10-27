@@ -1,6 +1,9 @@
 History Revision for {{$dist->name}}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Use CORE::exists for internal use of exists function.
+
   [Documentation]
   - Reorganised POD to be intereleaved with methods.
 
