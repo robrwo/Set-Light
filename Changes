@@ -1,6 +1,12 @@
 History Revision for {{$dist->name}}:
 
 {{$NEXT}}
+  [Documentation]
+  - Reorganised POD to be intereleaved with methods.
+
+  - Made minor changes to wording.
+
+  - Removed tabs and reformatted sections.
 
 0.92      2019-10-25 14:12:27+01:00 Europe/London
   [Other Changes]
