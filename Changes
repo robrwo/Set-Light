@@ -1,6 +1,8 @@
 History Revision for {{$dist->name}}:
 
 {{$NEXT}}
+
+0.93      2019-10-27 11:51:24+00:00 Europe/London
   [Bug Fixes]
   - Use CORE::exists for internal use of exists function.
 
