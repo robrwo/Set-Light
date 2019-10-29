@@ -216,6 +216,8 @@ sub delete {
 
 This returns an array of set members in an unsorted array.
 
+This was added in v0.91.
+
 =cut
 
 sub members {
