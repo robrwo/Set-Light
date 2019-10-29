@@ -69,18 +69,14 @@ BEGIN {
 
 =method new
 
-  my $set = Set::Light->new();
+  my $set = Set::Light->new( \%opts, @members );
 
 Creates a new Set::Light object. An optionally passed hash reference can
 contain options.
 
+Any members passed to the constructor will be inserted.
+
 Currently no options are supported.
-
-Note that:
-
-  my $set = Set::Light->new( qw/for bar baz/);
-
-will create a set with the members "for", "bar" and "baz".
 
 =cut
 
