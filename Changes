@@ -1,6 +1,8 @@
 History Revision for {{$dist->name}}:
 
 {{$NEXT}}
+
+0.94      2020-09-09 18:54:16+01:00 Europe/London
   [Documentation]
   - Cleaned up POD for the constructor.
 
