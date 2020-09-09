@@ -1,5 +1,7 @@
 requires "Array::RefElem" => "0";
 requires "perl" => "5.006";
+requires "strict" => "0";
+requires "warnings" => "0";
 
 on 'test' => sub {
   requires "File::Spec" => "0";
