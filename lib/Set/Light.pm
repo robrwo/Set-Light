@@ -9,7 +9,7 @@ use warnings;
 
 use Array::RefElem ();
 
-our $VERSION = '0.95';
+our $VERSION = '0.96';
 
 =head1 SYNOPSIS
 
