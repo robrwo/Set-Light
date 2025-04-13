@@ -8,6 +8,8 @@ History Revision for {{$dist->name}}:
 
   - Updated the POD about new maintainer.
 
+  - Added a security policy.
+
   [Toolchain]
   - Removed the requirement for Dist::Zilla::Plugin::Generate::ManifestSkip.
 
