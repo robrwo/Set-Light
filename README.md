@@ -160,7 +160,7 @@ This was added in v0.91.
 
 # SEE ALSO
 
-[Set::Object](https://metacpan.org/pod/Set::Object), [Set::Scalar](https://metacpan.org/pod/Set::Scalar).
+[Set::Object](https://metacpan.org/pod/Set%3A%3AObject), [Set::Scalar](https://metacpan.org/pod/Set%3A%3AScalar).
 
 # SOURCE
 

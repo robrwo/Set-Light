@@ -4,6 +4,7 @@ History Revision for {{$dist->name}}:
   [Documentation]
   - Bumped copyright year.
 
+  - Fixed encoding of links in the README.
 
 0.95      2021-05-07 13:02:47+01:00 Europe/London
   [Documentation]
