@@ -229,6 +229,10 @@ sub members {
 
 L<Set::Object>, L<Set::Scalar>.
 
+=head1 append:AUTHOR
+
+The current maintainer is Robert Rothenberg <rrwo@cpan.org>.
+
 =cut
 
 1;

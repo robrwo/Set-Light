@@ -180,9 +180,7 @@ feature.
 
 Tels <nospam-abuse@bloodgate.com>
 
-# CONTRIBUTOR
-
-Robert Rothenberg <rrwo@cpan.org>
+The current maintainer is Robert Rothenberg <rrwo@cpan.org>.
 
 # COPYRIGHT AND LICENSE
 
