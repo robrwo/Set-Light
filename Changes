@@ -8,6 +8,9 @@ History Revision for {{$dist->name}}:
 
   - Added a How to Contribute document.
 
+  [Tests]
+  - Added more author tests.
+
 0.96      2025-04-13 13:44:13+01:00 Europe/London
   [Documentation]
   - Bumped copyright year.
